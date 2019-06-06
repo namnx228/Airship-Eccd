@@ -1,0 +1,13 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+users:
+  - name: nam
+    groups: wheel
+    lock_passwd: false
+    passwd: $6$pIW1BbWfzPTewMg8$1A9oIuU1e1GvlJEHC6orEnnHXezvCA9sdL4ArFcbuUxozbc5JodO.5yjychKaCBUQEkBwHwJAWIm55UkVekqt1
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDGGkoEK3hohmbzskoM43SzARHJH/6t444OisBfZmA1nekhUNOpcVUk/wblOvgnHZ3ZisCc9XgRR5w9kyvjXyxXbI7C7obikd+nxSCYzo2yTObYAo7ja4X9+//1X19IF37pg263PQtGB1HhTW41eAz06rAeBU/blFIql487gHIliuFvgE8SzshWHxQ2FfZ3Sh/9unzYCzXEp979xWnkxVp+osTWU6SZdUJTElziifweRjDrFzUyTDaBURx2DbmBlUM+sml9C6nmTrqc+j1bckpXwdbxvQcFaitnR7HGIJQLKwQuhkbyl/fuVOQFHKbjMdjH6LvF0JcHzsf47cW5PLAkB3z1rX5RJdEcDlZt4SA5WNzAU4z117d2WjIku73Qfw33LaXahkEv2coYIb3s8d2fynkrRU2wCE9GTzVhlA30PYWmFwkpiKtjGxv1Jn9e+Xh4AzbI8KEQLtwQGrrdnyaADK2NfuYdw9pGVFsvN2mUnJS/o40grq3HAB5k9YglnxGqb2yDqHaTu1VWFwH0C31YREbtUDEOMv4hXSHNujqbopx4cX6+WJadye0pZEzLvByA4avhp4BJVZJwdU/asLJqWUiFrAzkvRGd0DtiVrktOQYzvBwuj+YT+rgFypohRPSz26uWmI07JpMO5CmfBQ2CNMP+3+ljcysTn3BJWQ0j5w== namnx228@namnx228-Latitude-7490
+    
